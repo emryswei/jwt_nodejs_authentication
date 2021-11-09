@@ -3,6 +3,8 @@ npm install dotenv   -- hide the password, manually create a .env file before us
 
 npm install mongoose -- connect to mongodb
 
+npm install @hapi/joi -- validate the input content(保證輸入的內容符合格式要求)
+
 不能在paclage.json添加注釋。
 
 npm可以在package.json中的"scripts"中使用腳本命令
