@@ -1,10 +1,10 @@
-const port = 3000;
+const PORT = 3000;
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const express = require("express");
-const app = express();
 
+const app = express();
 // import routers
 const authRoute = require("./routes/auth");
 
@@ -25,4 +25,4 @@ app.use(express.json());
 // router middlewares, .use()第二個參數是callback function
 app.use("/api/user", authRoute);
 
-app.listen(port, (req, res) => console.log("local server start"));
+app.listen(PORT, (req, res) => console.log("local server start"));

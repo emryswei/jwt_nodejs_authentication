@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// mongoose一開始就要定義schema，以後所有的data格式都必須符合schema
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
